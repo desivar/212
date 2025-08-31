@@ -1,6 +1,4 @@
-
 public static class Arrays
-
 {
 
     /// <summary>
@@ -26,8 +24,6 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
 
         // be implemented by another person.
-
-
 
         // Plan:
 
@@ -57,8 +53,6 @@ public static class Arrays
 
     }
 
-
-
 }
 
    public static class Arrays
@@ -66,9 +60,6 @@ public static class Arrays
 {
 
     // ... MultiplesOf method
-
-
-
     /// <summary>
 
     /// Rotate the 'data' to the right by the 'amount'. For example, if the data is 
@@ -95,8 +86,6 @@ public static class Arrays
 
         // be implemented by another person.
 
-
-
         // Plan:
 
         // 1. Calculate the effective rotation amount using the modulo operator to handle cases where 'amount' is
@@ -122,8 +111,6 @@ public static class Arrays
             return;
 
         }
-
-
 
         List<int> elementsToMove = data.GetRange(data.Count - rotations, rotations);
 
