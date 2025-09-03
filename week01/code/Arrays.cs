@@ -65,13 +65,13 @@ public static class Arrays
         // If so, a rotation will bring it back to the original state.
         // This optimization is not strictly necessary but it's good practice.
         if (data.Count == 0 || amount == 0)
-    {
-        return;
-    }
-
-    int effectiveAmount = amount % data.Count;
-    var rotatedSegment = data.GetRange(data.Count - effectiveAmount, effectiveAmount);
-    data.RemoveRange(data.Count - effectiveAmount, effectiveAmount);
-        data.InsertRange(0, rotatedSegment);
+        {
+            return;
         }
+
+        int effectiveAmount = amount % data.Count;
+        var rotatedSegment = data.GetRange(data.Count - effectiveAmount, effectiveAmount);
+        data.RemoveRange(data.Count - effectiveAmount, effectiveAmount);
+        data.InsertRange(0, rotatedSegment);
     }
+}
