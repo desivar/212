@@ -40,7 +40,7 @@ public static class Arrays
         {
             result[i] = number * (i + 1);
         }
-        
+
         return result;
 
     }
