@@ -1,4 +1,5 @@
-using System.Collections;
+
+   using System.Collections;
 using System.Transactions;
 
 public static class Recursion
@@ -183,18 +184,18 @@ public static class Recursion
     }
 
     /// <summary>
-    /// Use recursion to insert all paths that start at (0,0) and end at the
+    /// Use recursion to insert all paths start at (0,0) and end at the
     /// 'end' square into the results list.
     /// </summary>
     public static void SolveMaze(List<string> results, Maze maze, int x = 0, int y = 0, List<ValueTuple<int, int>>? currPath = null)
     {
-        // If this is the first time running the function, then we need
+        // If this first time running the function, then we need
         // to initialize the currPath list.
         if (currPath == null) {
             currPath = new List<ValueTuple<int, int>>();
         }
 
-        // TODO Start Problem 5
+        //  Start Problem 5
 
         //add current location to path
         currPath.Add((x,y)); 
